@@ -10,16 +10,8 @@ import UIKit
 
 class ServicesFactory {
 
-    #if TEST
-    static var presenterMock: Presenting!
-    #endif
-
     class func presenter(window: UIWindow) -> Presenting {
-        #if TEST
-        return presenterMock
-        #else
         return Presenter(window: window)
-        #endif
     }
 
     class func dataService() -> DataService {
