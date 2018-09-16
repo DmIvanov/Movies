@@ -34,7 +34,7 @@ class DetailVC: UIViewController {
         title = "Movie Details"
         view.backgroundColor = UIColor.black
         constructView()
-        if let posterURL = movie.posterURLString() {
+        if let posterURL = movie.backdropURLString() {
             ImageCache.sharedInstance.getImage(urlString: posterURL) { [weak self] (image, url) in
                 if image != nil {
                     self?.poster.image = image
@@ -53,11 +53,11 @@ class DetailVC: UIViewController {
     // MARK: - Private
     private func constructView() {
         poster = UIImageView(image: nil)
-        poster.contentMode = .scaleAspectFit
+        poster.contentMode = .scaleAspectFill
         view.addSubview(poster)
         poster.autoPinEdge(toSuperviewSafeArea: .leading)
         poster.autoPinEdge(toSuperviewSafeArea: .trailing)
-        poster.autoPinEdge(toSuperviewSafeArea: .top, withInset: 4)
+        poster.autoPinEdge(toSuperviewSafeArea: .top)
         poster.autoMatch(.height, to: .width, of: poster, withMultiplier: 0.7)
 
         titleLabel = UILabel(forAutoLayout: ())

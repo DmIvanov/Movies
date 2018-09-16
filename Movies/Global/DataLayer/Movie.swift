@@ -17,6 +17,7 @@ class Movie: Codable {
     let title: String
     let popularity: Double
     let poster_path: String?
+    let backdrop_path: String?
     let original_language: String
     let original_title: String
     let overview: String
@@ -24,6 +25,11 @@ class Movie: Codable {
 
     func posterURLString() -> String? {
         guard let path = poster_path else { return nil }
+        return "https://image.tmdb.org/t/p/w500\(path)"
+    }
+
+    func backdropURLString() -> String? {
+        guard let path = backdrop_path else { return posterURLString() }
         return "https://image.tmdb.org/t/p/w500\(path)"
     }
 }
