@@ -1,7 +1,7 @@
 # Movies
 Sample project utilising The Movie DB API (https://www.themoviedb.org/)
 
-The project is built under XCode 10, Swift 4
+The project is built under XCode 10, Swift 4.2
 
 ### Functionality:
 - downloading movies from API 
