@@ -24,12 +24,12 @@ The project is built under XCode 10, Swift 4
   - interacting with API when necessary
 4. **APIClient**
   - API interaction
-6. **MoviesVCFactory**
+5. **MoviesVCFactory**
   - Instantiating app scenes/viewControllers
   - Binding together view controllers, view models, necessary services and delegates
-7. **ServicesFactory**
+6. **ServicesFactory**
   - Instantiating the services (replacing them with mocks for testing)
-8. **Scenes (List view, Detail view):** ViewControllers + DataModels.
+7. **Scenes (List view, Detail view):** ViewControllers + DataModels.
   - View Controllers are only responsible for the layout, catching user interactions, displaying data from the models.
   - View Models are responsible for VCs' busines logic, state and interactind with the services and higher level interactors/coordinators
 
