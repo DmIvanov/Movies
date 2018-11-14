@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284FCAB4219B608300E1E6BF /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FCAB3219B608300E1E6BF /* AppAssembly.swift */; };
 		286F3D02214AC40300F33337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F3D00214AC40300F33337 /* Main.storyboard */; };
 		286F3D04214AC40400F33337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286F3D03214AC40400F33337 /* Assets.xcassets */; };
 		286F3D07214AC40400F33337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F3D05214AC40400F33337 /* LaunchScreen.storyboard */; };
 		286F3D1A214AC6C400F33337 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F3D0F214AC6C400F33337 /* AppCoordinator.swift */; };
 		286F3D1B214AC6C400F33337 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F3D11214AC6C400F33337 /* APIClient.swift */; };
-		286F3D1C214AC6C400F33337 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F3D12214AC6C400F33337 /* ServiceFactory.swift */; };
 		286F3D1D214AC6C400F33337 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F3D13214AC6C400F33337 /* AppDelegate.swift */; };
 		286F3D1F214AC6C400F33337 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F3D16214AC6C400F33337 /* DataService.swift */; };
 		286F3D23214AC7A600F33337 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F3D22214AC7A600F33337 /* Presenter.swift */; };
@@ -30,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		284FCAB3219B608300E1E6BF /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		286F3CF9214AC40300F33337 /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286F3D01214AC40300F33337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		286F3D03214AC40400F33337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		286F3D08214AC40400F33337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		286F3D0F214AC6C400F33337 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		286F3D11214AC6C400F33337 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		286F3D12214AC6C400F33337 /* ServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
 		286F3D13214AC6C400F33337 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		286F3D16214AC6C400F33337 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		286F3D22214AC7A600F33337 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
@@ -105,8 +105,8 @@
 			children = (
 				286F3D0F214AC6C400F33337 /* AppCoordinator.swift */,
 				286F3D13214AC6C400F33337 /* AppDelegate.swift */,
+				284FCAB3219B608300E1E6BF /* AppAssembly.swift */,
 				286F3D22214AC7A600F33337 /* Presenter.swift */,
-				286F3D12214AC6C400F33337 /* ServiceFactory.swift */,
 				286F3D10214AC6C400F33337 /* APILayer */,
 				286F3D14214AC6C400F33337 /* DataLayer */,
 			);
@@ -266,12 +266,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Movies/Pods-Movies-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -307,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				286F3D1C214AC6C400F33337 /* ServiceFactory.swift in Sources */,
 				286F3D2B214AC8BF00F33337 /* ListVC.swift in Sources */,
 				286F3D55214DAEFA00F33337 /* ImageCache.swift in Sources */,
 				286F3D1F214AC6C400F33337 /* DataService.swift in Sources */,
@@ -320,6 +321,7 @@
 				286F3D2D214AC8CE00F33337 /* DetailVC.swift in Sources */,
 				286F3D23214AC7A600F33337 /* Presenter.swift in Sources */,
 				286F3D1A214AC6C400F33337 /* AppCoordinator.swift in Sources */,
+				284FCAB4219B608300E1E6BF /* AppAssembly.swift in Sources */,
 				286F3D1D214AC6C400F33337 /* AppDelegate.swift in Sources */,
 				286F3D1B214AC6C400F33337 /* APIClient.swift in Sources */,
 			);

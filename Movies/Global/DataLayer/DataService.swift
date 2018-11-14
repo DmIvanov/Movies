@@ -14,15 +14,19 @@ let dataServiceMoviesRefreshedNotification = NSNotification.Name(rawValue: "data
 class DataService: DataServiceProtocol {
 
     // MARK: - Properties
+    private let apiClient: APIClient
+    
     private(set) var movies = [Movie]()
     private(set) var currentQuery: String?
-    
-    private let apiClient = APIClient()
 
     private var amountOfPages: Int?
     private var lastLoadedPage: Int?
     private let resourceSyncQueue = DispatchQueue(label: "com.movies.dataServiceSync")
 
+    // MARK: - Lifecycle
+    init(apiClient: APIClient) {
+        self.apiClient = apiClient
+    }
 
     // MARK: - Public
     func loadNowPlayingMovies(nextPage: Bool) {

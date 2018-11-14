@@ -13,12 +13,12 @@ class AppCoordinator: NSObject {
 
     // MARK: - Properties
     private let presenter: Presenting
-    fileprivate let dataService: DataServiceProtocol
+    private let dataService: DataServiceProtocol
 
     // MARK: - Lyfecycle
-    init(mainWindow: UIWindow) {
-        self.dataService = ServicesFactory.dataService()
-        self.presenter = ServicesFactory.presenter(window: mainWindow)
+    init(presenter: Presenting, dataService: DataServiceProtocol) {
+        self.dataService = dataService
+        self.presenter = presenter
     }
 
 

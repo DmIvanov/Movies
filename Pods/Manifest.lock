@@ -1,16 +1,20 @@
 PODS:
   - PureLayout (3.1.2)
+  - Swinject (2.4.1)
 
 DEPENDENCIES:
   - PureLayout
+  - Swinject
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - PureLayout
+    - Swinject
 
 SPEC CHECKSUMS:
   PureLayout: 4634d0b61e3b5021166e8ec7c18e9e0ca0720c8b
+  Swinject: f7f15a9672e99328c1f07f277091087917215700
 
-PODFILE CHECKSUM: 737a13cc9c25a22ffce197fe2151784ab7d90334
+PODFILE CHECKSUM: 3517ac1a0d744434afca0bdb52765841ad9304b6
 
 COCOAPODS: 1.5.3
