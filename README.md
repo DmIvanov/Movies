@@ -1,5 +1,6 @@
 # Movies
 Sample project utilising The Movie DB API (https://www.themoviedb.org/)
+Aplayground for learning DI-containers - [Swinject branch](https://github.com/DmIvanov/Movies/tree/swinject)
 
 The project is built under XCode 10, Swift 4.2
 
