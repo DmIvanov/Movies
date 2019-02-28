@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		286F3D02214AC40300F33337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F3D00214AC40300F33337 /* Main.storyboard */; };
 		286F3D04214AC40400F33337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286F3D03214AC40400F33337 /* Assets.xcassets */; };
 		286F3D07214AC40400F33337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286F3D05214AC40400F33337 /* LaunchScreen.storyboard */; };
 		286F3D1A214AC6C400F33337 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F3D0F214AC6C400F33337 /* AppCoordinator.swift */; };
@@ -31,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		286F3CF9214AC40300F33337 /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		286F3D01214AC40300F33337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		286F3D03214AC40400F33337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		286F3D06214AC40400F33337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		286F3D08214AC40400F33337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				286F3D0E214AC6C400F33337 /* Global */,
 				286F3D08214AC40400F33337 /* Info.plist */,
 				286F3D05214AC40400F33337 /* LaunchScreen.storyboard */,
-				286F3D00214AC40300F33337 /* Main.storyboard */,
 				286F3D19214AC6C400F33337 /* MoviesScene */,
 				286F3D34214B07F100F33337 /* Resources */,
 			);
@@ -249,7 +246,6 @@
 				286F3D53214D00B700F33337 /* film-camera.jpg in Resources */,
 				286F3D07214AC40400F33337 /* LaunchScreen.storyboard in Resources */,
 				286F3D04214AC40400F33337 /* Assets.xcassets in Resources */,
-				286F3D02214AC40300F33337 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +324,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		286F3D00214AC40300F33337 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				286F3D01214AC40300F33337 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		286F3D05214AC40400F33337 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -469,7 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H6HKHYPEJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Movies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,7 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H6HKHYPEJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Movies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
